@@ -12,6 +12,9 @@
     font-family: 'Cookie', cursive; */
 }
 
+body{
+    background-color: #efefef;
+}
 
 
 /* priducts section */
@@ -38,7 +41,7 @@ transition: all 0.3s ease 0s;
 
 
 #home-products .product-grid:hover:before{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 
@@ -92,5 +95,71 @@ transition: all 0.3s ease 0s;
     
 }
 
+#home-products .product-grid .social li:nth-child(2){
+    transition-delay: 0.05s;
+}
+#home-products .product-grid .social li:nth-child(3){
+    transition-delay: 0.13s;
+}
+
+#home-products .product-grid .social li:nth-child(4){
+    transition-delay: 0.17s;
+}
+
+#home-products .product-grid:hover .social li{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#home-products .product-grid .social li a{
+    color: #000;
+    background-color: #fff;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 2px 10px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+
+#home-products .product-grid .social li a:hover{
+    color: white;
+    background-color: #f7be16;
+    transition: .6s ease-in-out;
+}
+
+
+#home-products .product-grid .product-content{
+    padding: 18px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+
+}
+#home-products .product-grid .title{
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+#home-products .product-grid .title a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+#home-products .product-grid .title a:hover{
+    color: #f7be16;
+    transition: .4s ease-in-out;
+}
+
+
+#home-products .product-grid  .price{
+    color: #f7be16;
+}
 
 /* products section html and css end */
