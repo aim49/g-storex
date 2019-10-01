@@ -15,7 +15,7 @@
 
 
 /* priducts section */
-.home-products .product-grid{
+#home-products .product-grid{
     font-family: 'Playfair Display', serif;
     text-align: center;
     overflow: hidden;
@@ -25,7 +25,7 @@
 }
 
 
-.home-products .product-grid:before{
+#home-products .product-grid:before{
 content: '';
 height: 100%;
 width: 100%;
@@ -37,12 +37,60 @@ transition: all 0.3s ease 0s;
 }
 
 
-.home-products .product-grid:hover:before{
+#home-products .product-grid:hover:before{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
 
-.home-products .product-grid .product-image{
+#home-products .product-grid .product-class{
+    overflow: hidden;
+    position: relative;
+
+}
+
+#home-products .product-grid .product-class a{
+    display: block;
+
+}
+#home-products .product-grid .product-class img{
+    width: 100%;
+    height: auto;
+}
+#home-products .product-discount-label{
+    color: white;
+    background-color: #000;
+    font-size: 13px;
+    padding: 8px 12px;
+
+
+    border-radius: 5px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+}
+
+
+
+#home-products .product-grid .social{
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+}
+
+#home-products .product-grid .social li{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(300%);
+    transition: all 0.5s ease 0s;
     
 }
+
+
 /* products section html and css end */
