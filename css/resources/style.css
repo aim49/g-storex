@@ -75,9 +75,10 @@ button.slick-prev.slick-arrow::before{
 
 .products-slider .p-details{
     margin-top: 2rem;
-    border: .1rem solid gray;
+    border-top: .1rem solid gray;
     padding: 3%;
     margin-bottom: 2rem;
+
 }
 .products-slider .p-details{
     background-color: white;
@@ -104,9 +105,10 @@ button.slick-prev.slick-arrow::before{
 /* price */
 .products-slider .p-price{
     background: white;
-    border: .1rem solid gray;
+    border-top: .1rem solid gray;
     text-align: center;
     padding: 1.5rem ;
+    border-bottom:none;
 }
 .products-slider .p-price div small{
     font-size: 1.4rem;
@@ -128,7 +130,7 @@ button.slick-prev.slick-arrow::before{
     font-size: 2.9rem;
 }
 
-.products-slider .p-price .d-flex a:nth-child(1){
+.products-slider .p-price a:nth-child(1){
     color: #000;
     border: .1rem solid gray;
     width: 100%;
@@ -136,14 +138,14 @@ button.slick-prev.slick-arrow::before{
     text-decoration: none;
 
 }
-.products-slider .p-price .d-flex a:nth-child(1) .fa{
+.products-slider .p-price  a:nth-child(1) .fa{
     color: gray;   
     padding-right: .2rem;   
 }
-.products-slider .p-price .d-flex a:nth-child(2) .fa{
+.products-slider .p-price a:nth-child(2) .fa{
     padding-right: .2rem;   
 }
-.products-slider .p-price .d-flex a:nth-child(2){
+.products-slider .p-price  a:nth-child(2){
     color: #ffffff;
     border: .1rem solid gray;
     width: 100%;
@@ -181,4 +183,38 @@ button.slick-prev.slick-arrow::before{
 .products-slider .p-price .seller-id .p-user p{
     font-size: 90%;
     color: #fa983a;
+}
+
+
+  .products-slider .product-name-right{
+      background-color: rgba(128, 128, 128, 0.65);
+      color: white;
+      text-align: center;
+
+  }
+  .products-slider .product-name-right h2{
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: .5rem;
+    border-top: .1rem solid gray;
+  }
+
+  .products-slider .p-price .seller-id .link{
+      color: #000;
+      border: .1rem solid gray;
+      padding: .2rem 2rem;
+      text-decoration: none;
+      transition: ease-in-out .6s;
+     display: block;
+     
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .products-slider .p-price .seller-id .link:hover{
+    color: white;
+    border: .1rem solid gray;
+    padding: .2rem 2rem;
+    text-decoration: none;
+    background-color: #fa983a;
 }
