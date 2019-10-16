@@ -219,3 +219,80 @@ transition: all 0.3s ease 0s;
 
 /* end of the current section */
 
+
+
+/* product slider */
+#slider-carousel .carousel-product{
+    position: relative;
+    height: 50vh;
+}
+
+#slider-carousel .carousel-product img{
+    height: 50vh;
+    width: 100%;
+}
+#slider-carousel .carousel-product .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.136);
+}
+#slider-carousel .carousel-product .overlay .text{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+#slider-carousel .carousel-product .overlay .text h4{
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#slider-carousel .carousel-product .overlay .text p{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f7be16;
+    /* text-shadow: 1px 1px 5px  white; */
+}
+
+#slider-carousel .carousel-product .overlay .text a{
+    color: #f7be16;
+    padding: .5rem 2.5rem;
+    border: .1rem solid #f7be16;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+#slider-carousel .carousel-product .overlay .text a:hover{
+    background-color: #f7be16;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #slider-carousel .carousel-product .overlay .text h4{
+        font-size: 1.5rem;
+    }
+    #slider-carousel .carousel-product .overlay .text p{
+        font-size: 1rem;
+        /* text-shadow: 1px 1px 5px  white; */
+    }
+    
+
+
+    #slider-carousel .carousel-product .overlay .text{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    #slider-carousel .slider{
+        width: 90%;
+        margin: 0 auto;
+    }
+} 
