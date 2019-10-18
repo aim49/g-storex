@@ -24,7 +24,7 @@ body{
 .heading h3{
     color: gray;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -36,6 +36,113 @@ body{
 }
 /* heading content */
 
+
+
+/* img and search */
+#imgs{
+    background-image: url(../img/cart.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 55vh;
+    position: relative;
+}
+#imgs .overlay{
+    background-color: rgba(0, 0, 0, 0.149);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+#imgs .overlay-1{
+    top: 30%;
+    position: absolute;
+}
+#imgs .overlay-1 .text-search{
+    width: 90%;
+}
+#imgs .overlay-1 .text-search h3{
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+    font-size: 3em;
+    font-weight: bold;
+}
+#imgs .overlay-1 .text-search p{
+    color: #f7be16;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+#imgs .overlay-1 .search{
+    display: inline-block;
+}
+
+
+
+/* imgandn search end */
+
+
+/* category slider */
+#category-slider{
+    margin: 2rem 0;
+}
+#category-slider .cat-slider .cat-card{
+   height: 250px; 
+   width: 240px;
+   background-color: white;
+   padding: 1rem .5rem 2rem .5rem;
+}
+#category-slider .cat-slider .cat-card.border{
+    border: .5rem solid transparent !important;
+}
+#category-slider .cat-slider .cat-card .text h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#category-slider .cat-slider .cat-card .text p{
+    font-size: .9em;
+    color: #f7be16;
+}
+
+#category-slider .cat-slider .cat-card .cat-image img{
+    height: 70px;
+    width: 100%;
+    border: 1px solid gray;
+    margin: .1rem;
+    transition: all 300ms ease-in-out;
+}
+#category-slider .cat-slider .cat-card .cat-image img:hover{
+    border: 1px solid #f7be16;
+}
+
+#category-slider .cat-slider .cat-card .cat-image div{
+    flex: 1;
+}
+#category-slider .cat-slider .cat-card .view{
+    margin-top: .3rem;
+    margin-left: .1rem;
+}
+#category-slider .cat-slider .cat-card .view a{
+    color: #f7be16;
+    border: .1rem solid #f7be16;
+    padding: .2rem 1rem;
+    text-decoration: none;
+    font-size: .9em;
+    width: 50%;
+    transition: all 300ms ease-in-out;
+}
+#category-slider .cat-slider .cat-card .view a:hover{
+    background-color: #f7be16;
+    color: white;
+    border: .1rem solid #f7be16;
+}
+/* end of category slider */
+
 /* priducts section */
 #home-products .product-grid{
     font-family: 'Playfair Display', serif;
@@ -43,6 +150,18 @@ body{
     position: relative;
     border: 4px solid white;
     margin-bottom: 2rem;
+}
+
+ .more .See-More{
+    border: .1rem solid #f7be16;
+    color: #f7be16;
+    padding: .3rem 2.5rem;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+ .more .See-More:hover{
+    background-color: #f7be16;
+    color: white;
 }
 
 
@@ -75,7 +194,7 @@ transition: all 0.3s ease 0s;
 }
 #home-products .product-grid .product-class img{
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 #home-products .product-discount-label{
     color: white;
@@ -86,7 +205,7 @@ transition: all 0.3s ease 0s;
     position: absolute;
     left: 15px;
     top: 15px;
-
+    z-index: 22;
 }
 
 
@@ -203,10 +322,9 @@ transition: all 0.3s ease 0s;
 }
 
 #backgruond-text a{
-    padding: .5rem 1.5rem;
+    padding: .4rem 3.2rem;
     color: #efefef;
     background-color: #f7be16;
-    border-radius: 30px;
     text-decoration: none;
     border: .2rem solid #efefef;
 }
@@ -222,9 +340,13 @@ transition: all 0.3s ease 0s;
 
 
 /* product slider */
+#slider-carousel{
+    margin-top: 2rem;
+}
 #slider-carousel .carousel-product{
     position: relative;
     height: 50vh;
+
 }
 
 #slider-carousel .carousel-product img{
@@ -295,4 +417,54 @@ transition: all 0.3s ease 0s;
         width: 90%;
         margin: 0 auto;
     }
+    #category-slider .cat-slider{
+        width: 90%;
+        margin: 0 auto;
+    }
 } 
+
+/* companny assoc css */
+
+.company-logo{
+    background-color: white;
+    padding: .1rem 0;
+    text-align: center;
+    margin: 2rem 0;
+}
+.company-logo .c-image img{
+    height: 30px;
+    margin: 1rem auto;
+}
+
+
+/* top selling css */
+#top-selling .topselling{
+    margin-bottom: 1rem;
+}
+#top-selling .topselling .topselling-images{
+    margin-right: 1rem;
+}
+
+#top-selling .topselling .topselling-images img{
+    height: 70px;
+    width: 70px;
+    border: .1rem solid #f7be16;
+}
+
+#top-selling .topselling .topselling-text h4{
+    font-size: 1em;
+    margin-bottom: 0;
+    color: #f7be16;
+    font-family: 'Poppins', sans-serif;
+}
+#top-selling .topselling .topselling-text a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1em;
+    font-weight: bold;
+}
+#top-selling .topselling .topselling-text span{
+    font-size: .8em;
+    color: #f7be16;
+    
+}
