@@ -421,6 +421,9 @@ transition: all 0.3s ease 0s;
         width: 90%;
         margin: 0 auto;
     }
+    #sub .sub{
+        width: 100%!important;
+    }
 } 
 
 /* companny assoc css */
@@ -441,6 +444,7 @@ transition: all 0.3s ease 0s;
 #top-selling .topselling{
     margin-bottom: 1rem;
 }
+
 #top-selling .topselling .topselling-images{
     margin-right: 1rem;
 }
@@ -468,3 +472,65 @@ transition: all 0.3s ease 0s;
     color: #f7be16;
     
 }
+
+/* scubscirbe css */
+
+#sub  .sub{
+    width: 70%;
+    margin: 4rem auto;
+}
+#sub  .sub .text h4{
+    color: gray;
+    font-weight: bold;
+    font-size: 2em;
+}
+#sub  .sub .text p{
+    color: #f7be16;
+    font-size: 1em;
+    font-weight: bold;
+}
+#sub  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  #sub .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  #sub .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+
+  #sub .btn-link{
+      text-decoration: none;
+      color: #f7be16;
+  }
+  #sub  .form-control{
+    border-radius: 50px 0px 10px 51px;
+-moz-border-radius: 50px 0px 10px 51px;
+-webkit-border-radius: 50px 0px 10px 51px;
+border: 0px solid #000000;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 767.98px) {
+    #top-selling .topselling{
+        display: flex;
+        justify-content: center!important;
+    }
+   }
