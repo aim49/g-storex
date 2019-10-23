@@ -8,14 +8,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 <title>search</title>
+<style>
+    .input-group-prepend{
+        border-radius: 0!important;
+    }
+   .focus-remove:focus{
+       outline: none!important;
+       box-shadow: none!important;
+   }
+   .focus-remove{
+       border: .1rem solid darkorange;
+       border-radius: none!important;
+
+   }
+   #search .custom-select, #search .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text{
+       border-radius: 0!important;
+   }
+
+   #search .custom-select, #search .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text{
+       background-color: darkorange;
+       color: white;
+   }
+</style>
 </head>
 <body>
-    <h1>Find everything near you </h1>
-    <div class="form-box">
-        <input type="text" name="" id="" class="search-field business" placeholder="Business, Services..">
-
-        <input type="text" name="" id="" class="search-field location" placeholder="location">
-        <input type="button" class="search-btn" placeholder="Search">
+    <h3>darkside view</h3>
+    <div id="search">
+            <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                            <select class="custom-select focus-remove" id="inputGroupSelect02">
+                                    <option selected>All</option>
+                                    <option value="1">Cars</option>
+                                    <option value="2">Kitchen ware</option>
+                                    <option value="3">Cosmetics</option>
+                                    <option value="3">Electronics</option>
+                                    <option value="3">Computers</option>
+                                  </select>
+                    </div>
+        
+                    <input type="text" class="form-control focus-remove" aria-label="Text input with dropdown button">
+        
+        
+                    <div class="input-group-append">
+                          <button class="btn btn-outline-secondary focus-remove" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
