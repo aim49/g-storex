@@ -628,7 +628,9 @@ transition: all 0.3s ease 0s;
 
   #sub .btn-link{
       text-decoration: none;
-      color: var(--g-storex2);
+      color: #fff;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
   }
   #sub  .form-control{
     border-radius: 50px 0px 10px 51px;

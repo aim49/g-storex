@@ -7,9 +7,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-<title>Create Account</title>
+<title>
+    SignIn
+</title>
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Cookie|Lato:300,400,700,900|Playfair+Display:400,900|Poppins:300,400,500,700,900&display=swap');
+/* created by one click solution */
+
+
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lato:300,400,700,900|Playfair+Display:400,900|Poppins:300,400,500,700,900&display=swap');
 
 :root {
     --g-storex1: rgb(135,190,87);
@@ -28,6 +33,12 @@
     font-family: 'Cookie', cursive; */
 }
 
+*, html {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -35,10 +46,12 @@
 body {
   display: grid;
   justify-items: center;
+  padding-top: 4rem;
   background-image: url(desk.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 form {
@@ -73,19 +86,12 @@ label, input {
   padding: .5em 1.2em;
 }
 
-fieldset {
-  width:100%;
-  border:none;
-  margin-bottom:0;
-  border-bottom:1px dotted #cecece;
-  padding-bottom:20px;
-}
-
 input {
   width: 100%;
   border:1px solid  var(--g-storex3);
-  border-radius:0;
+  border-radius:4px;
   line-height: 1;
+  border-radius: 0!important;
 }
 
 button[type="submit"] {
@@ -116,13 +122,12 @@ h1 {
   padding: .2rem;
   color: var(--g-storex2);
   background-clip:text;
-  font-family: 'Poppins', sans-serif;
 }
 
 p, label {
   font: 14px/14px "Arial", sans-serif;
   padding: .5em 0;
-  color: #666;
+  color: #444;
 }
 
 p, a, a:link, a:visited, a:hover, a:active {
@@ -145,47 +150,33 @@ a:hover {
   }
 }
 
-.img-user{
-  z-index: 21;
-}
-
-
 </style>
 </head>
 <body>
 
-        <div class="login-container">
-                <form action="/" method="post">
-                <div>
-                  <h1>G-storex</h1>
-                          <p class="text-center">Welcome, Fill in to log into your account?</p>
-                </div>
-                    <fieldset>
-                      <div>
-                        <label for="name">Your Name <abbr aria-label="required">*</abbr></label>
-                        <input type="text" id="name" name="name" required>
-                      </div>
-                      <div>
-                        <label for="email">Your Email <abbr aria-label="required">*</abbr></label>
-                        <input type="email" id="email" name="email" required>
-                      </div>
-                  </fieldset>
-                    <div>
-                      <label for="password">Choose a Password <abbr aria-label="required">*</abbr></label>
-                      <input type="password" id="password" name="password" required>
-                    </div>
-                    <div>
-                        <label for="password">Please Same Password</label>
-                        <input type="password" id="password" name="password" required>
-                      </div>
-                  <div>
-                    <p>By signing up to this service, you are indicating that you have read and agreed to the <a href="#">Terms of service</a>.</p>
-                    <button type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Sign Up!</button>
-                 </div>
-                </form>
-              </div><!--Login-container-->
-              <div class="signup"><p>Already have an account? <a href="#">Sign In</a> &mdash; Get up to date?</p></div>
-                
+    <!-- sign in page oneclicksolution -->
+    <div class="login-container">
+        <form action="/" method="get">
+        <div>
+          <h1>G-storex</h1>
+        <p class="text-center">Welcome, Fill in to log into your account?</p>
+        </div>
+            <div>
+              <label for="name">Username</label>
+              <input type="text" id="name" name="username" required>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+              <p>Forgot <a href="#">Your Password?</a></p>
+            </div>
+          <div>
+            <button type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+         </div>
+        </form>
+      </div><!--Login-container-->
+      <div class="signup"><p>Don't have an account? <a href="#">Sign Up</a> &mdash; get up to date :)</p></div>
+        
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
