@@ -1042,3 +1042,19 @@ button.slick-prev.slick-arrow::before{
 
 
 /* slider page with producr singuler */
+
+
+/* shopping cart */
+
+.shopping-cart{
+    margin-top: 7rem;
+}
+.shopping-cart .table{
+    font-family: 'Poppins', sans-serif;
+}
+.shopping-cart input[type=number]{
+    width: 50px;
+}
+.color-change{
+    color: #fa983a;
+}
